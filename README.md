@@ -5,7 +5,7 @@ Node really sucks, But trust me it won't feel the same
 
 ## Roadmap
 
-- Runs V8 Engine
+
 
 ## Tech Stack
 
