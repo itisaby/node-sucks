@@ -26,7 +26,7 @@ Please adhere to this project's `code of conduct`.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/itisaby/node-sucks.git
 ```
 
 Go to the project directory
