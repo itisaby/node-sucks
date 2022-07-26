@@ -1,17 +1,18 @@
-//GLOBALS - NO WINDOW !!!!! (as there is no browser window)
-// __dirname is a global variable that contains the path to the current working directory
-// __filename is a global variable that contains the path and filename of the current script
-// require() is a function that can be used to load other JavaScript files
-// module is an object that represents the current module
-// exports is an object that is shared between the current module and other modules
-// process - info about env where the program is being executed 
+const http = require('http');
 
-console.log(__dirname);
-console.log(__filename);
-const express = require('express');
+const server = http.createServer((req, res)=>{
+    if(req.url === '/'){
+        res.end("Hello World");
+    }
+    if(req.url === '/api'){
+        res.end("Hello World API");
+    }
 
-// setInterval(
-//     () => {
-//         console.log(__filename);
-//     }
-//     , 2000);
+    res.end(
+        `
+        <h1> OOps! Page not found</h1>
+        <a href="/">Go to Home</a>
+        `
+    );
+})
+server.listen(3000);
